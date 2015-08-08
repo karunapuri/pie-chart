@@ -1,0 +1,59 @@
+//Code using Javascript and external JSON file:
+
+//Javascript Code
+<script>
+var myChart = new JSChart('chartid', 'pie');
+myChart.setDataJSON("data.json");
+myChart.draw();
+</script>
+
+//External file for data & settings
+//JSON Part
+{
+	"JSChart" : {
+		"datasets" : [
+			{
+				"type" : "pie",
+				"data" : [
+					{
+						"unit" : "Text",
+						"value" : "60%"
+					},
+					{
+						"unit" : "Image",
+						"value" : "20%"
+					},
+				        {
+						"unit" : "Audio",
+						"value" : "10%"
+					},
+					{
+						"unit" : "PDF",
+						"value" : "10%"
+					}
+									]
+			}
+		],
+		"colorset" : [
+			"#FACC00",
+			"#FB9900",
+			"#FB4800",
+			"#F8F933"
+		],
+		"optionset" : [
+			{
+				"set" : "setTitleColor",
+				"value" : "'#857D7D'"
+			},
+			{
+				"set" : "setPieUnitsColor",
+				"value" : "'#9B9B9B'"
+			},
+			{
+				"set" : "setPieValuesColor",
+				"value" : "'#6A0000'"
+			}
+		]
+	}
+}
+
